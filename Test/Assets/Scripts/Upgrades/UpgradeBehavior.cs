@@ -26,7 +26,8 @@ public class UpgradeBehavior : MonoBehaviour
         _pause.Paused();
         for (int i = 0; i < _allSpells.Length; i++)
         {
-            _spellsForDrop.Add(_allSpells[i]);
+            if(_allSpells[i].CurrentSpellLevel <= _allSpells[i].MaxLevel)
+                _spellsForDrop.Add(_allSpells[i]);
         }
         for (int i = 0; i < _skillScreen.Length; i++)
         {

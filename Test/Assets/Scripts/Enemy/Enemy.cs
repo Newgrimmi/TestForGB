@@ -54,8 +54,6 @@ public abstract class Enemy : MonoBehaviour, IPauseable, IFreezeable, IWeaknessa
     {
         if (_isAlive)
         {
-            Debug.Log(_currentHealth);
-            Debug.Log(damage);
             _currentHealth -= damage*_takenDamage;
             if (_currentHealth <= 0)
             {

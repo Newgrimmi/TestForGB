@@ -12,6 +12,7 @@ public abstract class Spells : ScriptableObject
 
     public event Action OnUpgrade;
 
+    public readonly int MaxLevel = 5;
     public abstract string TakeDescription();
 
     public void LevelUp()
