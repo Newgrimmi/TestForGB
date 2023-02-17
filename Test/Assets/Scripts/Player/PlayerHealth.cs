@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -10,7 +7,6 @@ public class PlayerHealth : MonoBehaviour
 
     private float _currentHealth;
     private bool _isAlive = true;
-    public float CurrentHP => _currentHealth;
 
     private void Start()
     {
@@ -30,8 +26,6 @@ public class PlayerHealth : MonoBehaviour
             }
         }
         _healthBar.UpdateHpBar(_currentHealth);
-      
-
     }
     
 }
